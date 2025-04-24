@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#C0DFF8">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="iTube App"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textColor="#01182A"
+        android:background="#44BFF6" />
+
+    <EditText
+        android:id="@+id/enterUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_below="@+id/title"/>
+
+    <EditText
+        android:id="@+id/enterPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_below="@id/enterUsername"
+        android:layout_marginTop="16dp"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_below="@id/enterPassword"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#69C9F4"
+        android:textColor="#01182A"/>
+
+    <Button
+        android:id="@+id/btnSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:layout_below="@id/btnLogin"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#69C9F4"
+        android:textColor="#01182A"/>
+</RelativeLayout>

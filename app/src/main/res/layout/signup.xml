@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#C0DFF8">
+
+    <EditText
+        android:id="@+id/enterFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/enterUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_below="@id/enterFullName"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/enterPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_below="@id/enterUsername"
+        android:layout_marginTop="16dp"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/enterReEnterPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Re Enter Password"
+        android:layout_below="@id/enterPassword"
+        android:layout_marginTop="16dp"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:layout_below="@id/enterReEnterPassword"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#69C9F4"
+        android:textColor="#01182A"/>
+</RelativeLayout>
